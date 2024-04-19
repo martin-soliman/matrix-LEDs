@@ -1,17 +1,5 @@
 #include <MD_MAX72xx.h>
 
-//declaration of alphabetical bitmaps
-extern const uint8_t ALPHABET[][8];
-extern const int ALPHABET_LEN;
-
-//declaration of numerical bitmaps
-extern const uint8_t NUMBERS[][8];
-extern const int NUMBERS_LEN;
-
-//declaration of error bitmap
-extern const uint8_t ERROR[8];
-
-
 //declaration of matrix display object
 extern MD_MAX72XX mx;
 
@@ -35,6 +23,7 @@ void matrixWrite(String output);
 void stringParse(String input);
 
 //declaration of constants used for ASCII ranges
+extern const int WHITESPACE;
 extern const int NUM_MIN;
 extern const int NUM_MAX;
 extern const int UPPER_MIN;
